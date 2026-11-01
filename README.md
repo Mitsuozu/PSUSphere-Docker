@@ -32,7 +32,6 @@ Stop with `Ctrl+C` or `docker compose down`.
 
 ## Publish to Docker Hub
 
-Replace `YOUR_DOCKERHUB_USERNAME` below with your actual username:
 
 ```powershell
 docker login
@@ -40,7 +39,6 @@ docker tag psu-sphere:latest YOUR_DOCKERHUB_USERNAME/psu-sphere:latest
 docker push YOUR_DOCKERHUB_USERNAME/psu-sphere:latest
 ```
 
-Also replace `YOUR_DOCKERHUB_USERNAME` in `for_client/docker-compose.yml`.
 
 ## Client: Pull and run (no build)
 
@@ -56,9 +54,3 @@ Open http://localhost:8000.
 
 The SQLite database is persisted in a named Docker volume. The local build and client deployment use separate volumes. This setup is for local development/classroom use, not public production hosting.
 
-## Submit
-
-Create a **new** GitHub repository for this activity. Do not submit or change the source repository. Submit the URL of your new repository, including the source code and Docker files above.
-=======
-# PSUSphere-Docker
->>>>>>> origin/main
