@@ -1,0 +1,12 @@
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.sqlite3
+.git/
+.env
+.env.*
+venv/
+.venv/
+psusenv/
+.vscode/
+data/

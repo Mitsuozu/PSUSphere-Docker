@@ -1,0 +1,13 @@
+services:
+  web:
+    image: mitsuozu/psu-sphere:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - psusphere_client_data:/data
+    environment:
+      DJANGO_SETTINGS_MODULE: projectsite.docker_settings
+      DJANGO_ALLOWED_HOSTS: localhost,127.0.0.1
+      SQLITE_PATH: /data/db.sqlite3
+volumes:
+  psusphere_client_data:

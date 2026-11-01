@@ -1,0 +1,16 @@
+HOW TO USE THIS ZIP
+
+1. In Windows PowerShell, clone the source into a NEW folder:
+   git clone https://github.com/Kenzo-gg/PSUSphere.git PSUSphere-Docker
+   cd PSUSphere-Docker
+2. Remove the copied source repository's Git metadata (PowerShell):
+   Remove-Item -Recurse -Force .git
+3. Extract this ZIP into PSUSphere-Docker, merging folders. Dockerfile, docker_settings.py,
+   docker-compose.yml, .dockerignore and README.md belong in the OUTER root beside requirements.txt.
+   for_client/docker-compose.yml belongs under for_client/.
+4. Keep the original requirements.txt and projectsite/ source files from the GitHub clone.
+5. docker compose up --build
+6. Publish to Docker Hub using README instructions.
+7. Create a new empty GitHub repo, git init, git add ., git commit, git remote add origin, git push.
+
+This ZIP is a Docker configuration OVERLAY, not a full copy of PSU-Sphere source code.
