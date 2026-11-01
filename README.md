@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PSU-Sphere — Docker Activity
 
 Source project: https://github.com/Kenzo-gg/PSUSphere
@@ -58,3 +59,6 @@ The SQLite database is persisted in a named Docker volume. The local build and c
 ## Submit
 
 Create a **new** GitHub repository for this activity. Do not submit or change the source repository. Submit the URL of your new repository, including the source code and Docker files above.
+=======
+# PSUSphere-Docker
+>>>>>>> origin/main
